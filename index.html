@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en" data-theme="grillhouse" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/style.css">
+  <title>The Grillhouse &mdash; Fire &amp; Flavor</title>
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <div class="bg-base-200/90 backdrop-blur-sm sticky top-0 z-50 shadow-md">
+    <div class="navbar container mx-auto  ">
+
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="-1"
+            class="menu menu-sm dropdown-content bg-base-200 rounded-box z-10 mt-3 w-52 p-2 shadow">
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#specials">Specials</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <a class="text-2xl font-bold tracking-wide text-primary">&#x1F525; The Grillhouse</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#specials">Specials</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a href="#contact" class="btn btn-primary btn-sm">Reserve a Table</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <div class="hero min-h-screen"
+    style="background-image: url('https://images.unsplash.com/photo-1558030006-450675393462?w=1600&q=80');">
+    <div class="hero-overlay bg-opacity-60  bg-black/60"></div>
+    <div class="hero-content text-center text-neutral-content">
+      <div class="max-w-2xl">
+        <p class="mb-3 text-primary font-semibold tracking-widest uppercase text-sm">Est. 2010
+          &bull; Authentic BBQ</p>
+        <h1 class="text-5xl md:text-7xl font-bold leading-tight">Fire-Crafted.<br />Flavor-Perfect.
+        </h1>
+        <p class="py-6 text-lg opacity-90">
+          Hand-selected cuts, slow-smoked over hickory & oak. Every plate tells the story of real
+          craftsmanship.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="#menu" class="btn btn-primary btn-lg">Explore Our Menu</a>
+          <a href="#contact"
+            class="btn btn-outline btn-lg text-white border-white hover:bg-white hover:text-base-content">Book
+            a Table</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== STATS ===== -->
+  <div class="bg-primary text-primary-content py-10">
+    <div class="stats stats-vertical sm:stats-horizontal w-full shadow">
+      <div class="stat place-items-center">
+        <div class="stat-value text-4xl">15+</div>
+        <div class="stat-title text-primary-content/80 text-lg">Years of Smoke</div>
+      </div>
+      <div class="stat place-items-center">
+        <div class="stat-value text-4xl">40+</div>
+        <div class="stat-title text-primary-content/80 text-lg">Menu Items</div>
+      </div>
+      <div class="stat place-items-center">
+        <div class="stat-value text-4xl">4.9&#9733;</div>
+        <div class="stat-title text-primary-content/80 text-lg">Guest Rating</div>
+      </div>
+      <div class="stat place-items-center">
+        <div class="stat-value text-4xl">100%</div>
+        <div class="stat-title text-primary-content/80 text-lg">Hardwood Smoked</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MENU SECTION ===== -->
+  <section id="menu" class="py-20 px-4 bg-base-100">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="text-primary font-semibold tracking-widest uppercase text-sm mb-2">What We Serve
+        </p>
+        <h2 class="text-4xl font-bold">Our Signature Menu</h2>
+        <div class="divider divider-primary w-24 mx-auto mt-3"></div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div
+          class="card bg-base-200 shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1.5">
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="BBQ Ribs" class="w-full h-52 object-cover" />
+          </figure>
+          <div class="card-body gap-5">
+            <h2 class="card-title">Smokehouse Ribs <span class="badge badge-primary">Fan Fav</span>
+            </h2>
+            <p class="text-lg">Fall-off-the-bone pork ribs, 12-hour hickory smoked with our house
+              dry rub.</p>
+            <div class="card-actions justify-between items-center">
+              <span class="text-2xl font-bold text-primary">$28</span>
+              <button class="btn btn-primary btn-sm">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card bg-base-200 shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1.5">
+          <figure class="relative">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80"
+              alt="Burger" class="w-full h-52 object-cover" />
+            <span class="absolute top-3 right-3 badge badge-error font-bold">-30% OFF</span>
+          </figure>
+          <div class="card-body gap-5">
+            <h2 class="card-title">Grill Master Burger</h2>
+            <p class="text-lg">Double smash patty, aged cheddar, caramelised onions &amp; smoky
+              chipotle aioli.</p>
+            <div class="card-actions justify-between items-center">
+              <span class="text-2xl font-bold text-primary">$19</span>
+              <button class="btn btn-primary btn-sm">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card bg-base-200 shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1.5">
+          <figure>
+            <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=600&q=80"
+              alt="Steak" class="w-full h-52 object-cover" />
+          </figure>
+          <div class="card-body gap-5">
+            <h2 class="card-title">Ribeye Steak <span class="badge badge-accent">Chef's Pick</span>
+            </h2>
+            <p class="text-lg">USDA prime 16oz ribeye, charred over live fire, rested in compound
+              herb butter.</p>
+            <div class="card-actions justify-between items-center">
+              <span class="text-2xl font-bold text-primary">$45</span>
+              <button class="btn btn-primary btn-sm">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card bg-base-200 shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1.5">
+          <figure class="relative">
+            <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=600&q=80"
+              alt="Chicken Wings" class="w-full h-52 object-cover" />
+            <span class="absolute top-3 right-3 badge badge-error font-bold">-30% OFF</span>
+          </figure>
+          <div class="card-body gap-5">
+            <h2 class="card-title">Smoked Wings</h2>
+            <p class="text-lg">Jumbo wings brined overnight, smoked low &amp; slow, tossed in your
+              choice of sauce.
+            </p>
+            <div class="card-actions justify-between items-center">
+              <span class="text-2xl font-bold text-primary">$16</span>
+              <button class="btn btn-primary btn-sm">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card bg-base-200 shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1.5">
+          <figure>
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80"
+              alt="BBQ Platter" class="w-full h-52 object-cover" />
+          </figure>
+          <div class="card-body gap-5">
+            <h2 class="card-title">Pitmaster Platter <span
+                class="badge badge-secondary">Share</span></h2>
+            <p class="text-lg">A feast for two — ribs, pulled pork, brisket, wings &amp; all the
+              sides.</p>
+            <div class="card-actions justify-between items-center">
+              <span class="text-2xl font-bold text-primary">$68</span>
+              <button class="btn btn-primary btn-sm">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card bg-base-200 shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1.5">
+          <figure class="relative">
+            <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=600&q=80"
+              alt="Corn & Sides" class="w-full h-52 object-cover" />
+            <span class="absolute top-3 right-3 badge badge-error font-bold">-30% OFF</span>
+          </figure>
+          <div class="card-body gap-5">
+            <h2 class="card-title">Grilled Sides</h2>
+            <p class="text-lg">Elote corn, smoked mac &amp; cheese, charred broccolini &amp;
+              jalapeño cornbread.</p>
+            <div class="card-actions justify-between items-center">
+              <span class="text-2xl font-bold text-primary">$9</span>
+              <button class="btn btn-primary btn-sm">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SPECIALS ===== -->
+  <section id="specials" class="py-20 px-4 bg-base-200">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="text-primary font-semibold tracking-widest uppercase text-sm mb-2">Limited Time
+        </p>
+        <h2 class="text-4xl font-bold">Weekly Specials</h2>
+        <div class="divider divider-primary w-24 mx-auto mt-3"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div role="alert" class="alert alert-soft alert-warning flex flex-col items-start gap-4">
+          <p class="font-bold text-lg">&#x1F525; Monday Madness</p>
+          <p>Half-price wings all day every Monday. No limits, no apologies.</p>
+        </div>
+        <div role="alert" class="alert alert-soft alert-success flex flex-col items-start gap-4">
+          <p class="font-bold text-lg">&#x1F969; Wednesday Brisket Night</p>
+          <p>Slow-smoked brisket special with two sides &mdash; only $22 every Wednesday.</p>
+        </div>
+        <div role="alert" class="alert alert-soft alert-error flex flex-col items-start gap-4">
+          <p class="font-bold text-lg">&#x1F37A; Weekend Pitmaster Brunch</p>
+          <p>Sat &amp; Sun 11am–3pm. Smoked eggs benedict, BBQ hash &amp; craft beers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="py-20 px-4 bg-base-100 min-h-screen flex items-center justify-center">
+    <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 items-center">
+      <div class="flex-1">
+        <p class="text-primary font-semibold tracking-widest uppercase text-sm mb-2">Our Story</p>
+        <h2 class="text-4xl font-bold mb-8">Born in Smoke &amp; Fire</h2>
+        <p class="text-base-content/80 mb-4">
+          The Grillhouse started in 2010 as a backyard passion project by pitmaster duo Marcus &amp;
+          Leo.
+          Armed with a hand-built offset smoker and family recipes passed down through generations,
+          they turned a weekend hobby into one of the city's most beloved BBQ destinations.
+        </p>
+        <p class="text-base-content/80 mb-8">
+          Every cut of meat is sourced from local farms, seasoned with house-made rubs,
+          and smoked low &amp; slow over real hardwood — no shortcuts, no gas, no shortcuts.
+          Just honest fire and the patience it takes to do it right.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <div class="badge badge-primary badge-lg">&#x1F330; Locally Sourced</div>
+          <div class="badge badge-secondary badge-lg">&#x1F525; Hardwood Only</div>
+          <div class="badge badge-accent badge-lg">&#x1F44A; No Shortcuts</div>
+          <div class="badge badge-neutral badge-lg">&#x1FAD5; Slow &amp; Low</div>
+        </div>
+      </div>
+      <div class="flex-1">
+        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=700&q=80"
+          alt="Pitmaster at work" class="rounded-2xl shadow-2xl w-full object-cover max-h-96" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="py-20 px-4 bg-base-200">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="text-primary font-semibold tracking-widest uppercase text-sm mb-2">Happy Guests
+        </p>
+        <h2 class="text-4xl font-bold">What People Say</h2>
+        <div class="divider divider-primary w-24 mx-auto mt-3"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div
+          class="card bg-base-100 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5">
+          <div class="card-body gap-4">
+            <div class="rating rating-sm mb-2">
+              <input type="radio" name="r1" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="r1" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="r1" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="r1" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="r1" class="mask mask-star-2 bg-orange-400" checked />
+            </div>
+            <p class="italic text-base-content/80">&ldquo;The ribs literally fell off the bone.
+              I&#39;ve eaten BBQ all over the country and this is top 3, no question.&rdquo;</p>
+            <div class="flex items-center gap-3 mt-4">
+              <div class="avatar avatar-placeholder">
+                <div class="bg-neutral text-neutral-content rounded-full w-10">
+                  <span>JR</span>
+                </div>
+              </div>
+              <div>
+                <p class="font-semibold">Jake R.</p>
+                <p class="text-xs opacity-60">Austin, TX</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card bg-base-100 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5">
+          <div class="card-body gap-4">
+            <div class="rating rating-sm mb-2">
+              <input type="radio" name="r2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="r2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="r2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="r2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="r2" class="mask mask-star-2 bg-orange-400" checked />
+            </div>
+            <p class="italic text-base-content/80">&ldquo;That Pitmaster Platter for two? We ordered
+              it for three adults and were still fighting over the last brisket slice.&rdquo;</p>
+            <div class="flex items-center gap-3 mt-4">
+              <div class="avatar avatar-placeholder">
+                <div class="bg-primary text-primary-content rounded-full w-10">
+                  <span>SM</span>
+                </div>
+              </div>
+              <div>
+                <p class="font-semibold">Sarah M.</p>
+                <p class="text-xs opacity-60">Chicago, IL</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card bg-base-100 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5">
+          <div class="card-body gap-4">
+            <div class="rating rating-sm mb-2">
+              <input type="radio" name="r3" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="r3" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="r3" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="r3" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="r3" class="mask mask-star-2 bg-orange-400" checked />
+            </div>
+            <p class="italic text-base-content/80">&ldquo;The ambiance, the smoke wafting from the
+              kitchen, the smiling staff — this place is everything a great grill should be.&rdquo;
+            </p>
+            <div class="flex items-center gap-3 mt-4">
+              <div class="avatar avatar-placeholder">
+                <div class="bg-secondary text-secondary-content rounded-full w-10">
+                  <span>DL</span>
+                </div>
+              </div>
+              <div>
+                <p class="font-semibold">Dana L.</p>
+                <p class="text-xs opacity-60">Portland, OR</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / RESERVE ===== -->
+  <section id="contact" class="py-20 px-4 bg-base-100">
+    <div class="max-w-2xl mx-auto">
+      <div class="text-center mb-10">
+        <p class="text-primary font-semibold tracking-widest uppercase text-sm mb-2">Reservations
+        </p>
+        <h2 class="text-4xl font-bold">Reserve Your Table</h2>
+        <div class="divider divider-primary w-24 mx-auto mt-3"></div>
+      </div>
+
+      <div class="card bg-base-200 shadow-xl">
+        <div class="card-body gap-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <fieldset class="fieldset">
+              <legend class="fieldset-legend">First Name</legend>
+              <input type="text" class="input w-full" placeholder="Marcus" />
+            </fieldset>
+            <fieldset class="fieldset">
+              <legend class="fieldset-legend">Last Name</legend>
+              <input type="text" class="input w-full" placeholder="Rivera" />
+            </fieldset>
+          </div>
+          <fieldset class="fieldset">
+            <legend class="fieldset-legend">Email</legend>
+            <input type="email" class="input w-full" placeholder="you@email.com" />
+          </fieldset>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <fieldset class="fieldset">
+              <legend class="fieldset-legend">Date</legend>
+              <input type="date" class="input w-full" />
+            </fieldset>
+            <fieldset class="fieldset">
+              <legend class="fieldset-legend">Party Size</legend>
+              <select class="select w-full">
+                <option disabled selected>Guests</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3–4</option>
+                <option>5–8</option>
+                <option>9+</option>
+              </select>
+            </fieldset>
+          </div>
+          <fieldset class="fieldset">
+            <legend class="fieldset-legend">Special Requests</legend>
+            <textarea class="textarea w-full" rows="3"
+              placeholder="Allergies, celebrations, seating preferences..."></textarea>
+          </fieldset>
+          <button class="btn btn-primary btn-block btn-lg mt-2">Confirm Reservation</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class=" bg-base-200 p-10">
+    <div class="footer sm:footer-horizontal text-base-content container mx-auto">
+
+
+      <nav>
+        <h6 class="footer-title text-primary">The Grillhouse</h6>
+        <p class="max-w-xs text-sm opacity-70">Slow-smoked flavors crafted with fire, patience, and
+          a
+          whole lot of love since 2010.</p>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Navigate</h6>
+        <a href="#menu" class="link link-hover">Menu</a>
+        <a href="#specials" class="link link-hover">Specials</a>
+        <a href="#about" class="link link-hover">Our Story</a>
+        <a href="#contact" class="link link-hover">Reservations</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Hours</h6>
+        <p class="text-sm">Mon &ndash; Thu: 11am &ndash; 10pm</p>
+        <p class="text-sm">Fri &ndash; Sat: 11am &ndash; Midnight</p>
+        <p class="text-sm">Sunday: 11am &ndash; 9pm</p>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Find Us</h6>
+        <p class="text-sm">123 Ember Lane, Grill District</p>
+        <p class="text-sm">Austin, TX 78701</p>
+        <a href="tel:+15125550199" class="link link-hover text-sm">(512) 555-0199</a>
+      </nav>
+    </div>
+  </footer>
+  <div class="footer footer-center bg-base-300 text-base-content/60 p-4 text-sm">
+    <p>&copy; 2026 The Grillhouse. All rights reserved.</p>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-size: 20px;
+  }
+}
+
+@plugin "daisyui" {
+  themes:
+    light,
+    dark,
+    grillhouse --default;
+}
+
+@plugin "daisyui/theme" {
+  name: "grillhouse";
+  default: true;
+  color-scheme: dark;
+
+  --color-base-100: oklch(18% 0.02 40);
+  --color-base-200: oklch(22% 0.03 40);
+  --color-base-300: oklch(27% 0.04 40);
+  --color-base-content: oklch(90% 0.025 60);
+
+  --color-primary: oklch(65% 0.22 50);
+  --color-primary-content: oklch(15% 0.04 50);
+
+  --color-secondary: oklch(55% 0.18 30);
+  --color-secondary-content: oklch(95% 0.01 30);
+
+  --color-accent: oklch(72% 0.2 85);
+  --color-accent-content: oklch(15% 0.04 85);
+
+  --color-neutral: oklch(35% 0.05 40);
+  --color-neutral-content: oklch(90% 0.02 40);
+
+  --color-info: oklch(65% 0.15 220);
+  --color-info-content: oklch(98% 0.01 220);
+
+  --color-success: oklch(65% 0.2 140);
+  --color-success-content: oklch(98% 0.01 140);
+
+  --color-warning: oklch(78% 0.22 80);
+  --color-warning-content: oklch(20% 0.05 80);
+
+  --color-error: oklch(62% 0.26 25);
+  --color-error-content: oklch(98% 0.01 25);
+
+  --radius-selector: 0.5rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.75rem;
+
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+.grill-card__item {
+  @apply card bg-base-200 shadow-xl;
+}
