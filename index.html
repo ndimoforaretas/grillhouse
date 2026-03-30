@@ -59,6 +59,16 @@
     <div class="navbar container mx-auto px-8 ">
 
       <div class="navbar-start">
+        <a href="/" aria-label="The Grillhouse home"
+          class="text-2xl font-bold tracking-wide text-primary flex items-center gap-2">
+          <img src="/icons/grillhauz-logo.png"
+            alt="The Grillhouse Logo showing a figure standing infront of their grill"
+            class="w-8 h-auto object-contain rounded-lg" />
+          <span class="hidden sm:inline-block">
+            The
+            Grillhouse
+          </span>
+        </a>
         <div id="mobile-menu-wrapper" class="dropdown">
           <button id="mobile-menu-button" type="button" class="btn btn-ghost lg:hidden"
             aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
@@ -76,13 +86,7 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-        <a href="/" aria-label="The Grillhouse home"
-          class="text-2xl font-bold tracking-wide text-primary flex items-center gap-2">
-          <img src="/icons/grillhauz-logo.png"
-            alt="The Grillhouse Logo showing a figure standing infront of their grill"
-            class="w-8 h-auto object-contain rounded-lg" />
-          The
-          Grillhouse</a>
+
       </div>
       <div class="navbar-center hidden lg:flex">
         <nav aria-label="Main navigation">
@@ -109,24 +113,25 @@
         src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1600&q=70"
         srcset="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=960&q=70 960w, https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1280&q=70 1280w, https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1600&q=70 1600w"
         sizes="100vw" width="1600" height="1067" fetchpriority="high" decoding="async"
-        alt="Grilled meat over open flame"
+        alt="Grilled meat over open flame" as="image"
         class="absolute inset-0 z-0 h-full w-full object-cover" />
       <div class="absolute inset-0 z-10 bg-black/50"></div>
       <div class="hero-content relative z-20 text-center text-neutral-content">
         <div class="max-w-2xl">
           <p class="mb-3 text-primary font-semibold tracking-widest uppercase text-sm">Est. 2010
             &bull; Authentic BBQ</p>
-          <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+          <h1 class="text-4xl md:text-7xl font-bold leading-tight">
             Fire-Crafted.<br />Flavor-Perfect.
           </h1>
           <p class="py-6 text-lg opacity-90">
             Hand-selected cuts, slow-smoked over hickory & oak. Every plate tells the story of real
             craftsmanship.
           </p>
-          <div class="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="#menu" class="btn btn-primary btn-lg">Explore Our Menu</a>
+          <div class="flex flex-col sm:flex-row gap-3 justify-center ">
+            <a href="#menu" class="btn btn-primary md:btn-lg w-80% mx-auto md:w-auto">Explore Our
+              Menu</a>
             <a href="#contact"
-              class="btn btn-outline btn-lg text-white border-white hover:bg-white hover:text-primary">Book
+              class="btn btn-outline btn-md md:btn-lg text-white border-white hover:bg-white hover:text-primary w-80% mx-auto md:w-auto">Book
               a Table</a>
           </div>
         </div>
@@ -134,23 +139,24 @@
     </div>
 
     <!-- ===== STATS ===== -->
-    <section class="bg-primary text-primary-content py-10" aria-label="Restaurant highlights">
-      <div class="stats stats-vertical sm:stats-horizontal w-full shadow">
+    <section class="bg-primary text-primary-content py-10 hidden md:block"
+      aria-label="Restaurant highlights">
+      <div class="stats stats-vertical sm:stats-horizontal w-full max-w-6xl mx-auto">
         <div class="stat place-items-center">
-          <div class="stat-value text-4xl">15+</div>
-          <div class="stat-title text-primary-content text-lg">Years of Smoke</div>
+          <p class="stat-value text-4xl">15+</p>
+          <p class="stat-title text-primary-content text-lg">Years of Smoke</p>
         </div>
         <div class="stat place-items-center">
-          <div class="stat-value text-4xl">40+</div>
-          <div class="stat-title text-primary-content text-lg">Menu Items</div>
+          <p class="stat-value text-4xl">40+</p>
+          <p class="stat-title text-primary-content text-lg">Menu Items</p>
         </div>
         <div class="stat place-items-center">
-          <div class="stat-value text-4xl"><span aria-label="4.9 stars">4.9&#9733;</span></div>
-          <div class="stat-title text-primary-content text-lg">Guest Rating</div>
+          <p class="stat-value text-4xl"><span aria-label="4.9 stars">4.9&#9733;</span></p>
+          <p class="stat-title text-primary-content text-lg">Guest Rating</p>
         </div>
         <div class="stat place-items-center">
-          <div class="stat-value text-4xl">100%</div>
-          <div class="stat-title text-primary-content text-lg">Hardwood Smoked</div>
+          <p class="stat-value  text-4xl">100%</p>
+          <p class="stat-title text-primary-content text-lg">Hardwood Smoked</p>
         </div>
       </div>
     </section>
@@ -178,10 +184,12 @@
                 class="w-full h-52 object-cover" />
             </figure>
             <div class="card-body gap-5">
-              <h3 class="card-title">Smokehouse Ribs <span class="badge badge-primary">Fan
+              <h3 class="card-title flex-col md:flex-row">Smokehouse Ribs <span
+                  class="badge badge-primary">Fan
                   Fav</span>
               </h3>
-              <p class="text-lg">Fall-off-the-bone pork ribs, 12-hour hickory smoked with our house
+              <p class=" text-sm md:text-lg">Fall-off-the-bone pork ribs, 12-hour hickory smoked
+                with our house
                 dry rub.</p>
               <div class="card-actions justify-between items-center">
                 <span class="text-2xl font-bold text-primary">$28</span>
@@ -204,7 +212,8 @@
             </figure>
             <div class="card-body gap-5">
               <h3 class="card-title">Grill Master Burger</h3>
-              <p class="text-lg">Double smash patty, aged cheddar, caramelised onions &amp; smoky
+              <p class="text-sm md:text-lg">Double smash patty, aged cheddar, caramelised onions
+                &amp; smoky
                 chipotle aioli.</p>
               <div class="card-actions justify-between items-center">
                 <span class="text-2xl font-bold text-primary">$19</span>
@@ -225,10 +234,12 @@
                 class="w-full h-52 object-cover" />
             </figure>
             <div class="card-body gap-5">
-              <h3 class="card-title">Ribeye Steak <span class="badge badge-accent">Chef's
+              <h3 class="card-title flex-col md:flex-row">Ribeye Steak <span
+                  class="badge badge-accent">Chef's
                   Pick</span>
               </h3>
-              <p class="text-lg">USDA prime 16oz ribeye, charred over live fire, rested in compound
+              <p class="text-sm md:text-lg">USDA prime 16oz ribeye, charred over live fire, rested
+                in compound
                 herb butter.</p>
               <div class="card-actions justify-between items-center">
                 <span class="text-2xl font-bold text-primary">$45</span>
@@ -251,7 +262,8 @@
             </figure>
             <div class="card-body gap-5">
               <h3 class="card-title">Smoked Wings</h3>
-              <p class="text-lg">Jumbo wings brined overnight, smoked low &amp; slow, tossed in your
+              <p class="text-sm md:text-lg">Jumbo wings brined overnight, smoked low &amp; slow,
+                tossed in your
                 choice of sauce.
               </p>
               <div class="card-actions justify-between items-center">
@@ -273,9 +285,10 @@
                 class="w-full h-52 object-cover" />
             </figure>
             <div class="card-body gap-5">
-              <h3 class="card-title">Pitmaster Platter <span
+              <h3 class="card-title flex-col md:flex-row">Pitmaster Platter <span
                   class="badge badge-secondary">Share</span></h3>
-              <p class="text-lg">A feast for two — ribs, pulled pork, brisket, wings &amp; all the
+              <p class="text-sm md:text-lg">A feast for two — ribs, pulled pork, brisket, wings
+                &amp; all the
                 sides.</p>
               <div class="card-actions justify-between items-center">
                 <span class="text-2xl font-bold text-primary">$68</span>
@@ -298,7 +311,8 @@
             </figure>
             <div class="card-body gap-5">
               <h3 class="card-title">Grilled Sides</h3>
-              <p class="text-lg">Elote corn, smoked mac &amp; cheese, charred broccolini &amp;
+              <p class="text-sm md:text-lg">Elote corn, smoked mac &amp; cheese, charred broccolini
+                &amp;
                 jalapeño cornbread.</p>
               <div class="card-actions justify-between items-center">
                 <span class="text-2xl font-bold text-primary">$9</span>
@@ -345,8 +359,9 @@
       <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 items-center">
         <div class="flex-1">
           <p class="text-primary font-semibold tracking-widest uppercase text-sm mb-2">Our Story</p>
-          <h2 id="about-heading" class="text-4xl font-bold mb-8">Born in Smoke &amp; Fire</h2>
-          <p class="text-base-content/80 mb-4">
+          <h2 id="about-heading" class="text-2xl md:text-4xl font-bold mb-8">Born in Smoke &amp;
+            Fire</h2>
+          <p class="text-base-content/80 mb-4 ">
             The Grillhouse started in 2010 as a backyard passion project by pitmaster duo Marcus
             &amp;
             Leo.
