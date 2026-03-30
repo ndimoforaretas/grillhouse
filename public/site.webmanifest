@@ -1,0 +1,22 @@
+{
+  "name": "The Grillhouse",
+  "short_name": "Grillhouse",
+  "description": "Authentic hardwood-smoked BBQ in Austin, TX.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#1f1813",
+  "theme_color": "#e26b1a",
+  "icons": [
+    {
+      "src": "/icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
