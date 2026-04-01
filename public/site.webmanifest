@@ -1,7 +1,7 @@
 {
-  "name": "The Grillhouse",
-  "short_name": "Grillhouse",
-  "description": "Authentic hardwood-smoked BBQ in Austin, TX.",
+  "name": "The Grillhauz",
+  "short_name": "Grillhauz",
+  "description": "Authentic hardwood-smoked BBQ in Grillstadt.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
