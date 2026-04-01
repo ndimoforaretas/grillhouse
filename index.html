@@ -139,7 +139,7 @@
     </div>
 
     <!-- ===== STATS ===== -->
-    <section class="bg-primary text-primary-content py-10 hidden md:block"
+    <section class="bg-primary text-primary-content py-10 hidden md:flex items-center"
       aria-label="Restaurant highlights">
       <div class="stats stats-vertical sm:stats-horizontal w-full max-w-6xl mx-auto">
         <div class="stat place-items-center">
@@ -384,7 +384,8 @@
         <div class="flex-1">
           <img
             src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=65"
-            srcset="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=700&q=65 700w, https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=65 1200w"
+            srcset="https://images.unsplash.com/photo-1555939594-58d7cb
+561ad1?auto=format&fit=crop&w=700&q=65 700w, https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=65 1200w"
             sizes="(min-width: 1024px) 50vw, 100vw" alt="Pitmaster at work" loading="lazy"
             decoding="async" width="700" height="384"
             class="rounded-2xl shadow-2xl w-full h-96 object-cover" />
@@ -474,7 +475,8 @@
               </div>
               <span class="sr-only">5 out of 5 stars</span>
               <p class="italic text-base-content/80">&ldquo;The ambiance, the smoke wafting from the
-                kitchen, the smiling staff — this place is everything a great grill should
+                kitchen, the smiling staff — this place is everything a
+                great grill should
                 be.&rdquo;
               </p>
               <div class="flex items-center gap-3 mt-4">
@@ -506,7 +508,7 @@
         </div>
 
         <div class="card bg-base-200 shadow-xl">
-          <div class="card-body gap-4">
+          <form class="card-body gap-4">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <fieldset class="fieldset">
                 <legend class="fieldset-legend">First Name</legend>
@@ -549,9 +551,10 @@
                 class="textarea w-full" rows="3"
                 placeholder="Allergies, celebrations, seating preferences..."></textarea>
             </fieldset>
-            <button type="button" class="btn btn-primary btn-block btn-lg mt-2">Confirm
+            <button type="button"
+              class="btn btn-primary btn-block btn-lg mt-2 w-1/2 mx-auto">Confirm
               Reservation</button>
-          </div>
+          </form>
         </div>
       </div>
     </section>
@@ -598,4 +601,4 @@
   <script type="module" src="/src/register-sw.js"></script>
 </body>
 
-</html>
+</html>-
